@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+</head>
+<body>
+    <header>
+        <div id="salir">
+           <p> Escuela de danzas 
+                Polinesias  Vaihere</p>
+            <button class="btn btn-outline-danger" id="btnSalir">salir</button>
+        </div>
+    </header>
+
+    <section class="horarios" id="horarios">
+        <p>Horarios</p>
+        <div class="fotos">
+            <div class="foto">
+                <img src="img/horario.jpg" alt="">
+            </div>
+            <div class="foto">
+                <img src="img/horario.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="video">
+        <video src="./img/video.mp4" autoplay muted loop></video>
+    </section>
+
+
+    <footer>
+        <div class="copyright">
+            <p>"Derechos Reservados - Danzas Polinesias VAIHERE 2021"</p>
+        </div>
+    </footer>
+
+
+    <script>
+
+        
+
+       const boton = document.getElementById('btnSalir');
+       boton.addEventListener('click', function(e){
+        e.preventDefault();
+        localStorage.removeItem('sesion');
+        window.open('./index.php', '_sefl');
+       })
+    </script>
+
+
+</body>
+</html>
